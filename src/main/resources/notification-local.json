@@ -1,0 +1,93 @@
+[
+  {
+    "id": 2,
+    "created_by": null,
+    "created_date": "2025-04-03 08:55:09.241235 +00:00",
+    "last_modified_by": null,
+    "last_modified_date": null,
+    "is_read": false,
+    "message": "Вам назначено новое отправление №JMART3843635",
+    "title": "Новое отправление",
+    "task_id": 2,
+    "user_id": 3452961,
+    "notification_type": "NEW_TASK_NOTIFICATION"
+  },
+  {
+    "id": 3,
+    "created_by": null,
+    "created_date": "2025-04-03 10:09:31.663577 +00:00",
+    "last_modified_by": null,
+    "last_modified_date": null,
+    "is_read": false,
+    "message": "Вам назначено новое отправление №JMART3843635",
+    "title": "Новое отправление",
+    "task_id": 3,
+    "user_id": 3452961,
+    "notification_type": "NEW_TASK_NOTIFICATION"
+  },
+  {
+    "id": 4,
+    "created_by": null,
+    "created_date": "2025-04-03 10:23:21.634940 +00:00",
+    "last_modified_by": null,
+    "last_modified_date": null,
+    "is_read": false,
+    "message": "Вам назначено новое отправление №JMART3843635",
+    "title": "Новое отправление",
+    "task_id": 4,
+    "user_id": 3452961,
+    "notification_type": "NEW_TASK_NOTIFICATION"
+  },
+  {
+    "id": 5,
+    "created_by": null,
+    "created_date": "2025-04-03 10:23:36.311928 +00:00",
+    "last_modified_by": null,
+    "last_modified_date": null,
+    "is_read": false,
+    "message": "Вам назначено новое отправление №JMART3843635",
+    "title": "Новое отправление",
+    "task_id": 5,
+    "user_id": 3452961,
+    "notification_type": "NEW_TASK_NOTIFICATION"
+  },
+  {
+    "id": 10,
+    "created_by": null,
+    "created_date": "2025-04-04 06:17:17.929475 +00:00",
+    "last_modified_by": null,
+    "last_modified_date": null,
+    "is_read": false,
+    "message": "Вам назначено новое отправление №JMART3843635",
+    "title": "Новое отправление",
+    "task_id": 10,
+    "user_id": 3452961,
+    "notification_type": "NEW_TASK_NOTIFICATION"
+  },
+  {
+    "id": 26,
+    "created_by": null,
+    "created_date": "2025-04-04 12:57:42.426985 +00:00",
+    "last_modified_by": null,
+    "last_modified_date": null,
+    "is_read": false,
+    "message": "Вам назначено новое отправление №JMART3843635",
+    "title": "Новое отправление",
+    "task_id": 26,
+    "user_id": 3452961,
+    "notification_type": "NEW_TASK_NOTIFICATION"
+  },
+  {
+    "id": 27,
+    "created_by": null,
+    "created_date": "2025-04-04 12:58:54.566702 +00:00",
+    "last_modified_by": null,
+    "last_modified_date": null,
+    "is_read": false,
+    "message": "Вам назначено новое отправление №JMART3843635",
+    "title": "Новое отправление",
+    "task_id": 27,
+    "user_id": 3452961,
+    "notification_type": "NEW_TASK_NOTIFICATION"
+  }
+]
