@@ -39,6 +39,15 @@ public class Notification {
     @JsonProperty("last_modified_date")
     String lastModifiedDate;
 
+    public String getBarcode() {
+        String marker = "№";
+        int index = message.indexOf(marker);
+        if (index != -1 && index + marker.length() < message.length()) {
+            return message.substring(index + marker.length()).trim();
+        }
+        return null;
+    }
+
     public Long getId() {
         return id;
     }

@@ -68,7 +68,7 @@ public class MigrateService {
                 : CANCEL_TASK_TEMPLATE_ID;
         writer.append(template_id + ", ");
 
-        writer.append("'" + ow.writeValueAsString(new Attribute(notification.getTaskId())) + "', ");
+        writer.append("'" + ow.writeValueAsString(new Attribute(notification.getBarcode())) + "', ");
 
         writer.append("'" + ow.writeValueAsString(new FinalMessage(notification.getMessage())) + "', ");
 

@@ -3,14 +3,14 @@ package com.example.courierservicedbmigrate.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Attribute {
-    @JsonProperty("task_id")
-    private Long taskId;
+    @JsonProperty("barcode")
+    private String barcode;
 
-    public Long getTaskId() {
-        return taskId;
+    public String getBarcode() {
+        return barcode;
     }
 
-    public Attribute(Long taskId) {
-        this.taskId = taskId;
+    public Attribute(String barcode) {
+        this.barcode = barcode;
     }
 }
