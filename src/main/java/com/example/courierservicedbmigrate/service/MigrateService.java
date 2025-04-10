@@ -73,7 +73,7 @@ public class MigrateService {
         writer.append("'" + ow.writeValueAsString(new FinalMessage(notification.getMessage())) + "', ");
 
         String status = notification.getRead() ? "READ" : "SENT";
-        writer.append("'" + status + "' ) ");
+        writer.append("'" + status + "' ); ");
 
         return writer.toString();
     }
