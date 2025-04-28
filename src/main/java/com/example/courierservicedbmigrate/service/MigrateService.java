@@ -9,7 +9,6 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.io.*;
@@ -19,9 +18,9 @@ import java.util.List;
 @RequiredArgsConstructor
 public class MigrateService {
 
-    private final String RESOURCE_NAME = "/notification-local.json";
-    private final long NEW_TASK_TEMPLATE_ID = 3L;
-    private final long CANCEL_TASK_TEMPLATE_ID = 4L;
+    private final String RESOURCE_NAME = "/notification_newtest.json";
+    private final long NEW_TASK_TEMPLATE_ID = 1L;
+    private final long CANCEL_TASK_TEMPLATE_ID = 2L;
 
     ObjectWriter ow = new ObjectMapper().writer();
 
@@ -57,7 +56,7 @@ public class MigrateService {
 
         StringBuilder writer = new StringBuilder();
         writer.append(sqlQuery);
-        writer.append("'" + notification.getCreatedDate() + "', ");
+        writer.append(getReadDate(notification.getCreatedDate()));
 
         writer.append(getReadDate(notification.getLastModifiedDate()));
 
@@ -68,7 +67,7 @@ public class MigrateService {
                 : CANCEL_TASK_TEMPLATE_ID;
         writer.append(template_id + ", ");
 
-        writer.append("'" + ow.writeValueAsString(new Attribute(notification.getBarcode())) + "', ");
+        writer.append("'" + ow.writeValueAsString(new Attribute(notification.getBarcode(), notification.getTaskId())) + "', ");
 
         writer.append("'" + ow.writeValueAsString(new FinalMessage(notification.getMessage())) + "', ");
 
